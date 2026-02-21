@@ -1,0 +1,22 @@
+# Elison World Site
+
+# Dependencies (none - pure HTML/CSS/JS)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+.tmp/
+temp/
