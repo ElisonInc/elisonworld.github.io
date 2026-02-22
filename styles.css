@@ -1220,6 +1220,10 @@ blockquote cite {
         --space-3xl: 6rem;
     }
     
+    html {
+        scroll-padding-top: 60px; /* Smaller nav on mobile */
+    }
+    
     .hero {
         padding: var(--space-lg);
     }
