@@ -28,12 +28,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "ElisonWorld",
+      "creator": {
+        "@type": "Organization",
+        "name": "Elison Inc.",
+        "url": "https://elisoninc.github.io/website"
+      },
+      "url": "https://elison-world.vercel.app"
+    }
+    </script>
 </head>
 <body>
     <!-- Page Loader -->
     <div class="page-loader" id="pageLoader">
         <div class="loader-content">
-            <div class="loader-logo">Elison</div>
+            <div class="loader-logo">Elison World</div>
             <div class="loader-line"></div>
         </div>
     </div>
@@ -47,8 +60,12 @@
     <!-- Navigation -->
     <nav class="nav">
         <div class="nav-inner">
-            <a href="#hero" class="nav-logo">Elison</a>
+            <div class="breadcrumb">
+                <a href="https://elisoninc.github.io/website">← Elison Inc</a> > ElisonWorld
+            </div>
+            <a href="#hero" class="nav-logo">Elison World</a>
             <div class="nav-links" id="navLinks">
+                <a href="https://elisoninc.github.io/website" class="nav-link nav-link-back" title="Back to Elison Inc">← Core</a>
                 <a href="#universe" class="nav-link">Universe</a>
                 <a href="#entities" class="nav-link">Entities</a>
                 <a href="#connect" class="nav-link">Connect</a>
@@ -99,10 +116,13 @@
                     Every creator deserves tools that understand their vision. Not platforms that extract value, but ecosystems that amplify it.
                 </p>
                 <p class="universe-lead">
-                    This is the universe I built—and the invitation I extend to you.
+                    This is the universe I built—and this is how you operate inside it.
                 </p>
                 <p class="universe-body">
                     When I faced the bottlenecks of creation, ownership, and growth, I didn't find the tools I needed. So I built them. From the studio to rights management, from AI to the artist's hands—each piece comes from solving real problems I lived through. Now this ecosystem exists for every creator asking the same questions I did.
+                </p>
+                <p class="universe-guidance">
+                    You're not observing this world. You're stepping into it. Find your stage. Use the layer that moves your work forward. Move to the next when you're ready.
                 </p>
             </div>
             <div class="universe-visual" data-animate>
@@ -310,14 +330,20 @@
     <footer class="footer">
         <div class="footer-inner">
             <div class="footer-left">
-                <span class="footer-logo">Elison</span>
+                <span class="footer-logo">Elison World</span>
                 <span class="footer-year">© 2026</span>
             </div>
             <div class="footer-center">
-                <span class="footer-tagline">Built by one creator. For every creator.</span>
+                <span class="footer-tagline">ElisonWorld is created and operated by Elison Inc. Part of the Elison Ecosystem.</span>
             </div>
             <div class="footer-right">
-                <a href="mailto:hello@elison.co" class="footer-link">Connect</a>
+                <a href="https://elisoninc.github.io/website" class="footer-link">Back to Elison Inc</a>
+                <span class="footer-separator">•</span>
+                <a href="https://onetime.studio" class="footer-link">OneTime</a>
+                <span class="footer-separator">•</span>
+                <a href="https://songsplit.org" class="footer-link">SongSplit</a>
+                <span class="footer-separator">•</span>
+                <a href="https://devhouseai.com" class="footer-link">DevHouse</a>
             </div>
         </div>
     </footer>
