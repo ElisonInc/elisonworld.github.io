@@ -120,48 +120,48 @@ function initHeroAnimations() {
     
     // Use GSAP if available
     if (typeof gsap !== 'undefined') {
-        const heroTl = gsap.timeline({ 
+        const heroTl = gsap.timeline({
             defaults: { ease: 'power3.out' },
-            delay: 0.5 // Wait for loader
+            delay: 0.1 // Minimal delay for snappy feel
         });
-        
+
         if (heroEyebrow) {
             heroTl.from(heroEyebrow, {
-                y: 30,
-                opacity: 0,
-                duration: 0.8
-            });
-        }
-        
-        if (heroTitle) {
-            heroTl.from(heroTitle.querySelectorAll('.line'), {
-                y: 50,
-                opacity: 0,
-                duration: 1,
-                stagger: 0.15
-            }, '-=0.4');
-        }
-        
-        if (heroSubtitle) {
-            heroTl.from(heroSubtitle, {
-                y: 30,
-                opacity: 0,
-                duration: 0.8
-            }, '-=0.6');
-        }
-        
-        if (heroCta) {
-            heroTl.from(heroCta, {
                 y: 20,
                 opacity: 0,
-                duration: 0.6
+                duration: 0.5
+            });
+        }
+
+        if (heroTitle) {
+            heroTl.from(heroTitle.querySelectorAll('.line'), {
+                y: 30,
+                opacity: 0,
+                duration: 0.6,
+                stagger: 0.08
+            }, '-=0.3');
+        }
+
+        if (heroSubtitle) {
+            heroTl.from(heroSubtitle, {
+                y: 20,
+                opacity: 0,
+                duration: 0.5
             }, '-=0.4');
         }
-        
+
+        if (heroCta) {
+            heroTl.from(heroCta, {
+                y: 15,
+                opacity: 0,
+                duration: 0.4
+            }, '-=0.3');
+        }
+
         if (heroScrollIndicator) {
             heroTl.from(heroScrollIndicator, {
                 opacity: 0,
-                duration: 0.8
+                duration: 0.5
             }, '-=0.2');
         }
         
