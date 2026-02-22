@@ -524,10 +524,38 @@ section {
     color: var(--color-text-primary);
 }
 
+.universe-preamble {
+    font-family: var(--font-display);
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    color: var(--color-text-primary);
+    line-height: 1.6;
+    margin-bottom: var(--space-md);
+    font-style: italic;
+}
+
+.universe-lead {
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    line-height: 1.5;
+    margin-bottom: var(--space-lg);
+    color: var(--color-text-primary);
+}
+
 .universe-body {
     font-size: 1.0625rem;
     color: var(--color-text-secondary);
     line-height: 1.8;
+    margin-bottom: var(--space-md);
+}
+
+.universe-guidance {
+    font-size: 1rem;
+    color: var(--color-text-primary);
+    line-height: 1.7;
+    font-weight: 500;
+    margin-top: var(--space-lg);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
 }
 
 /* Orbit System */
@@ -788,6 +816,14 @@ section {
     margin-bottom: var(--space-sm);
 }
 
+.entity-origin {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+    margin-bottom: var(--space-sm);
+    line-height: 1.5;
+}
+
 .entity-description {
     font-size: 0.9375rem;
     color: var(--color-text-secondary);
@@ -859,6 +895,14 @@ section {
     padding: 0 var(--space-xl);
     position: relative;
     z-index: 1;
+}
+
+.philosophy-preamble {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: var(--space-lg);
 }
 
 blockquote {
@@ -952,6 +996,14 @@ blockquote cite {
     margin: 0 auto;
     position: relative;
     z-index: 1;
+}
+
+.connect-intro {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: var(--space-md);
 }
 
 .connect-lead {
